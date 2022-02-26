@@ -1,0 +1,71 @@
+.footer
+  background-color: #050505
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__menu-case
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0 30px
+  &__logo
+    width: 90px
+    height: 90px
+  &__copyright-case
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 22px 0 47px
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+    .copyright
+      &__text
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 19px
+
+        color: #FFFFFF
+
+        mix-blend-mode: normal
+        opacity: 0.5
+      &__links
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        justify-content: flex-end
+        align-items: center
+      &__link
+        a
+          text-decoration: none
+          font-family: Open Sans
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 16px
+          text-align: right
+          letter-spacing: 0.1em
+          text-transform: uppercase
+
+          color: #FFFFFF
+          transition-duration: 0.5s
+          transition-property: all
+          &:hover, &:focus
+            color: $t-hover
+        &:not(:last-child)
+          margin-right: 10px
+          padding-right: 10px
+          position: relative
+          &::after
+            content: ''
+            position: absolute
+            right: 0
+            width: 1px
+            height: 70%
+            top: 15%
+            background-color: #fff
+
+
+

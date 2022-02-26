@@ -1,0 +1,114 @@
+.features
+  background-image: url('/img/features-bg.jpg')
+  background-position-y: -92px
+  background-size: cover
+  background-repeat: no-repeat
+  &__container
+    display: flex
+    justify-content: end
+    align-items: start
+    padding-top: 168px
+    padding-bottom: 260px
+  &__content
+    max-width: 520px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: start
+    padding-right: 105px
+  &__head
+    margin-bottom: 70px
+  &__title
+    font-family: Bebas Neue
+    font-style: normal
+    font-weight: bold
+    font-size: 80px
+    line-height: 80px
+    letter-spacing: 3px
+    text-transform: uppercase
+    text-align: left
+  &__subtitle
+    font-family: Bebas Neue
+    font-style: normal
+    font-size: 24px
+    line-height: 24px
+    letter-spacing: 2px
+    text-align: left
+
+    margin-bottom: 7px
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    padding-left: 50px
+
+  &__item
+    position: relative
+    &:not(:last-child)
+      padding-bottom: 28px
+    input
+      opacity: 0
+      z-index: -1
+      position: absolute
+      &+label
+        display: inline-flex
+        align-items: center
+        user-select: none
+        &::before
+          content: ''
+          width: 14px
+          height: 14px
+          position: absolute
+          border: 2px solid #ffffff
+          border-radius: 50%
+          left: -50px
+          top: 7px
+          transition-duration: 0.2s
+          transition-property: all
+        &::after
+          content: ''
+          width: 4px
+          height: 0
+          background-color: #fff
+          position: absolute
+          left: -43px
+          top: 9px
+          transition-duration: 0.5s
+          transition-property: all
+      &:checked+label
+        &::before
+          background-color: #fff
+        &::after
+          height: 100%
+
+
+  &__tag
+    font-family: Bebas Neue
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 36px
+    text-align: center
+    letter-spacing: 2px
+    color: $t-hover
+    margin-bottom: 5px
+
+    cursor: pointer
+  &__text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 122%
+
+    text-align: justify
+    margin: 0
+    height: 0
+    overflow: hidden
+
+    transition-duration: 0.5s
+    transition-property: all
+
+
+
