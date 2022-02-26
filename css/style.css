@@ -265,7 +265,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -415,7 +415,7 @@ body {
 }
 
 .features {
-  background-image: url("../img/features-bg.jpg");
+  background-image: url("../../img/features-bg.jpg");
   background-position-y: -92px;
   background-size: cover;
   background-repeat: no-repeat;
