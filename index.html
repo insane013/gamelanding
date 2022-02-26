@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Game Landing</title>
+</head>
+<body>
+  <div class="big-container">
+    <header class="header">
+      <div class="container top-menu__container">
+        <div class="logo header__logo">
+          <a href="#">
+            <img src="img/logo.png" alt="" class="logo_img">
+          </a>
+        </div>
+        <!-- /.logo -->
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="" class="menu__link">Main</a></li>
+            <li class="menu__item"><a href="" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Game features</a></li>
+            <li class="menu__item"><a href="" class="menu__link">system requirements</a></li>
+            <li class="menu__item"><a href="" class="menu__link">quotes</a></li>
+          </ul>
+        </nav>
+        <!-- /.menu -->
+    
+        <div class="top-menu__right-side">
+          <div class="lang-box header__lang-box">
+            <div class="lang-box__head">
+              <span class="lang-box__text" id="header-lang">ENG</span>
+              <svg class="icon lang-box__arrow">
+                <use xlink:href="img/sprite.svg#arrow-1"></use>
+              </svg>
+            </div>
+            <ul class="lang-box__select">
+              <li class="lang-box-item lang-box__select-item" target="#header-lang" value="RUS">RUS</li>
+              <li class="lang-box-item lang-box__select-item" target="#header-lang" value="FRA">FRA</li>
+              <li class="lang-box-item lang-box__select-item" target="#header-lang" value="DEU">DEU</li>
+              <li class="lang-box-item lang-box__select-item" target="#header-lang" value="ENG" lang-box-status="selected">
+                ENG
+              </li>
+            </ul>
+          </div>
+    
+          <div class="header__shop-btns">
+            <a class="header__shop-btn-link" href="">
+              <svg class="icon header__shop-btn-ico">
+                <use xlink:href="img/sprite.svg#xbox"></use>
+              </svg>
+            </a>
+            <a class="header__shop-btn-link" href="">
+              <svg class="icon header__shop-btn-ico">
+                <use xlink:href="img/sprite.svg#steam"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- /.header__shop-btns -->
+        </div>
+        <!-- /.top-menu__right-side -->
+      </div>
+      <!-- /.container -->
+      <div class="container header__container">
+        <div class="header-content">
+          <h1 class="title header__title">SURVIVE AT ALL COSTS</h1>
+          <span class="subtitle header__subtitle">Experience new social battle royale game</span>
+        </div>
+        <!-- /.heder-content -->
+        <button class="button header__button">
+          <span class="button__caption">Buy Now on Steam</span>
+          <span class="button__cost">$14.99</span>
+        </button>
+      </div>
+      <!-- /.container -->
+      <div class="container header__container--bottom">
+        <a href="#" class="header__story-link">
+          <span>
+            The story
+          </span>
+          <!-- <svg class="icon">
+            <use xlink:href="img/sprite.svg#scrolldown"></use>
+          </svg> -->
+          <img class="icon" src="img/scroll down.svg" alt="">
+        </a>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <div class="features">
+      <div class="container features__container">
+        <div class="features__content">
+          <div class="features__head">
+            <div class="subtitle features__subtitle">What’s so special?</div>
+            <h2 class="title features__title">features</h2>
+          </div>
+          <!-- /.features__head -->
+          <div class="features__main">
+            <ul class="features__list">
+              <li class="features__item">
+                <input type="radio" name="features" id="survive-tab" data-attr="show-content" target="#survive-con">
+                <label for="survive-tab" class="features__tag">SURVIVE AT ALL COSTS</label>
+                <p class="features__text" id="survive-con">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+              </li>
+              <li class="features__item">
+                <input type="radio" name="features" id="create-tab" data-attr="show-content" target="#create-con">
+                <label for="create-tab" class="features__tag">CREATE ALLIES AND ENEMIES</label>
+                <p class="features__text" id="create-con">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+              </li>
+              <li class="features__item">
+                <input type="radio" name="features" id="impress-tab" data-attr="show-content" target="#impress-con">
+                <label for="impress-tab" class="features__tag">IMPRESS THE AUDIENCE</label>
+                <p class="features__text" id="impress-con">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+              </li>
+            </ul>
+          </div>
+          <!-- /.features__main -->
+        </div>
+        <!-- /.features__content -->
+      </div>
+      <!-- /.container features__container -->
+    </div>
+    <!-- /.features -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__menu-case">
+          <div class="logo footer__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="" class="logo_img">
+            </a>
+          </div>
+          <!-- /.logo -->
+          <nav class="menu footer__menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="" class="menu__link">Main</a></li>
+              <li class="menu__item"><a href="" class="menu__link">About</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Game features</a></li>
+              <li class="menu__item"><a href="" class="menu__link">system requirements</a></li>
+              <li class="menu__item"><a href="" class="menu__link">quotes</a></li>
+            </ul>
+          </nav>
+          <!-- /.menu -->
+          <div class="socials footer__socials">
+            <a class="socials__link" href="">
+              <svg class="icon socials__ico">
+                <use xlink:href="img/socials.svg#facebook"></use>
+              </svg>
+            </a>
+            <a class="socials__link" href="">
+              <svg class="icon socials__ico">
+                <use xlink:href="img/socials.svg#twitter"></use>
+              </svg>
+            </a>
+            <a class="socials__link" href="">
+              <svg class="icon socials__ico">
+                <use xlink:href="img/socials.svg#yt"></use>
+              </svg>
+            </a>
+            <a class="socials__link" href="">
+              <svg class="icon socials__ico">
+                <use xlink:href="img/socials.svg#twitch"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- /.footer__socials -->
+        </div>
+        <!-- /.footer__menu-case -->
+        <div class="copyright footer__copyright-case">
+          <span class="copyright__text">
+            © 2018 Outpost Games, Inc. All Rights Reserved
+          </span>
+          <ul class="copyright__links">
+            <li class="copyright__link">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="copyright__link">
+              <a href="#">Terms of Service</a>
+            </li>
+            <li class="copyright__link">
+              <a href="#">Code of Conduct</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer__copyrights-case -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
