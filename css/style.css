@@ -197,6 +197,7 @@ body {
   border: none;
   border-radius: 4px;
   outline: none;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,6 +263,179 @@ body {
 
 .socials__link:not(:last-child) {
   margin-right: 50px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  background-image: url("../img/table-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 545px;
+}
+
+.grid__item {
+  padding: 15px 20px;
+  position: relative;
+}
+
+.grid__item:nth-child(odd) {
+  border-right: 1px solid #979797;
+}
+
+.grid__item:last-child {
+  border: none;
+  grid-column: span 2;
+}
+
+.grid__item:not(:last-child) {
+  border-bottom: 1px solid #979797;
+}
+
+.grid__title {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.grid__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 122%;
+  color: #FFFFFF;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 20px;
+  max-width: 453px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card--right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__name {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  margin-bottom: 5px;
+}
+
+.card__status {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: justify;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.card__avatar {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  width: 62px;
+  height: 62px;
+  margin-right: 22px;
+}
+
+.card__avatar::after {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: #FFB548;
+  left: 6px;
+  top: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.card__quote {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+}
+
+.card__date {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
 .header {
@@ -576,6 +750,132 @@ body {
           transition-duration: 0.5s;
   -webkit-transition-property: all;
   transition-property: all;
+}
+
+.requirements {
+  background-image: url("../img/requirements-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.requirements__container {
+  padding-top: 145px;
+  padding-bottom: 170px;
+}
+
+.requirements__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 133px;
+}
+
+.requirements__subtitle {
+  margin-bottom: 9px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.requirements__title {
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+}
+
+.quotes {
+  position: relative;
+  background-image: url("../img/quotes-bg.jpg");
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.quotes__bg-gradient {
+  position: absolute;
+  background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.quotes__container {
+  padding-top: 160px;
+  padding-bottom: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.quotes__left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 200px;
+}
+
+.quotes__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.quotes__subtitle {
+  margin-bottom: 8px;
+}
+
+.quotes__title {
+  text-align-last: left;
+  margin-bottom: 50px;
+}
+
+.quotes__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 122%;
+  color: #FFFFFF;
+  margin-bottom: 38px;
+}
+
+.quotes__item {
+  z-index: 1;
+}
+
+.quotes__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .footer {

@@ -140,6 +140,7 @@ body
   border: none
   border-radius: 4px
   outline: none
+  text-decoration: none
 
   display: flex
   align-items: center
@@ -190,5 +191,133 @@ body
     &__link
       &:not(:last-child)
         margin-right: 50px
+
+.grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  background-image: url('../img/table-bg.png')
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  max-width: 545px
+  &__item
+    padding: 15px 20px
+    position: relative
+    &:nth-child(odd)
+      border-right: 1px solid #979797
+    &:last-child
+      border: none
+      grid-column: span 2
+    &:not(:last-child)
+      border-bottom: 1px solid #979797
+  &__title
+    font-family: Bebas Neue
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 24px
+    letter-spacing: 2px
+
+    color: $t-hover
+    text-transform: uppercase
+
+    margin-bottom: 7px
+  &__text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 122%
+    color: #FFFFFF
+
+.card
+  background: rgba(255, 255, 255, 0.08)
+  border-radius: 10px
+  padding: 15px
+  padding-bottom: 20px
+  max-width: 453px
+
+  display: flex
+  flex-direction: column
+  &--right
+    align-self: flex-end
+  &__head
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-bottom: 20px
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+  &__user
+    display: flex
+    align-items: center
+  &__name
+    font-family: Bebas Neue
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 24px
+    letter-spacing: 2px
+
+    color: $t-hover
+    margin-bottom: 5px
+  &__status
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 122%
+
+    text-align: justify
+
+    color: #FFFFFF
+
+    opacity: 0.5
+
+  &__avatar
+    border-radius: 50%
+    object-fit: cover
+    position: relative
+    width: 62px
+    height: 62px
+    margin-right: 22px
+    &::after
+      content: ''
+      position: absolute
+      width: 64px
+      height: 64px
+      background: $t-hover
+      left: 6px
+      top: 0
+      border-radius: 50%
+      z-index: -1
+
+  &__quote
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+
+    color: #FFFFFF
+
+    margin-bottom: 9px
+
+  &__date
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 19px
+
+    color: #FFFFFF
+
+    mix-blend-mode: normal
+    opacity: 0.5
+
+
 
 
